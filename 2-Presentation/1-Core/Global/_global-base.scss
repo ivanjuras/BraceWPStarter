@@ -1,0 +1,183 @@
+
+// ---------- Root ---------- //
+
+* {
+	
+	box-sizing: border-box;
+
+}
+
+html {
+
+	-ms-overflow-style: none;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	overflow-style: none;
+	
+}
+
+body {
+
+	background: palette( white, base );
+	color: palette( black, light );
+	font-family: $fontFamily--a;
+	font-size: $fontSize--base;
+
+	@include mediaQueries( medium ) {
+		font-size: $fontSize--base--bpm;
+	}
+
+	@include mediaQueries( small ) {
+		font-size: $fontSize--base--bps;
+	}
+
+}
+
+// ---------- Headings ---------- //
+
+h1,
+h2,
+h3,
+h4 {
+
+	color: palette( black, lightest );
+	font-family: $fontFamily--b;
+	line-height: $lineHeight--c;
+	margin: 0;
+
+}
+
+h1 {
+
+	font-size: $fontSize--xxl;
+
+	@include mediaQueries( medium ) {
+		font-size: $fontSize--xxl--bpm;
+	}
+
+	@include mediaQueries( small ) {
+		font-size: $fontSize--xxl--bps;
+	}
+
+}
+
+h2 {
+
+	font-size: $fontSize--l;
+	font-weight: 400;
+	margin-bottom: $marginBottom--xxs;
+
+	@include mediaQueries( medium ) {
+		font-size: $fontSize--l--bpm;
+		margin-bottom: $marginBottom--xxs--bpm;
+	}
+
+	@include mediaQueries( small ) {
+		font-size: $fontSize--l--bps;
+		margin-bottom: $marginBottom--xxs--bps;
+	}
+
+}
+
+h3 {
+
+	font-size: $fontSize--l;
+	font-weight: 300;
+	margin-bottom: 0;
+
+	@include mediaQueries( medium ) {
+		font-size: $fontSize--l--bpm;
+	}
+
+	@include mediaQueries( small ) {
+		font-size: $fontSize--l--bps;
+	}
+
+}
+
+h4 {
+
+	font-size: $fontSize--xs;
+	font-family: $fontFamily--a;
+	margin-bottom: 0;
+
+	&.Post-date {
+
+		font-weight: 400;
+		margin-bottom: $marginBottom--m;
+		color: palette( grey, base );
+
+		@include mediaQueries( medium ) {
+			margin-bottom: $marginBottom--m--bpm;
+		}
+
+		@include mediaQueries( small ) {
+			margin-bottom: $marginBottom--m--bps;
+		}
+
+	}
+
+	@include mediaQueries( medium ) {
+		font-size: $fontSize--xs--bpm;
+	}
+
+	@include mediaQueries( small ) {
+		font-size: $fontSize--xs--bps;
+	}
+
+}
+
+// ---------- Links ---------- //
+
+a {
+
+	color: palette( red, base );
+	text-decoration: underline;
+
+	&:hover {
+		color: palette( red, dark );
+	}
+
+}
+
+// ---------- Images ---------- //
+
+img {
+
+	max-width: 100%;
+	height: auto;
+
+}
+
+// ---------- Paragraphs ---------- //
+
+p {
+
+	color: palette( black, light );
+	font-size: $fontSize--base;
+	line-height: $lineHeight--a;
+	margin: 0 0 $marginBottom--s 0;
+
+	@include mediaQueries( medium ) {
+		font-size: $fontSize--base--bpm;
+		margin-bottom: $marginBottom--s--bpm;
+	}
+
+	@include mediaQueries( small ) {
+		font-size: $fontSize--base--bps;
+		margin-bottom: $marginBottom--s--bps;
+	}
+
+}
+
+// ---------- Lists ---------- //
+
+ul {
+
+	margin: 0;
+	padding: 0;
+	-webkit-padding-start: 0;
+	-ms-padding-start: 0;
+	-moz-padding-start: 0;
+
+}

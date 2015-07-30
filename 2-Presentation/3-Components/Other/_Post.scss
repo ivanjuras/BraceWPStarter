@@ -1,0 +1,52 @@
+
+// ---------- Post ---------- //
+
+// Base
+.Post {
+
+	padding: $paddingTop--xs $paddingRight--s $paddingBottom--l $paddingLeft--s;
+
+	@include mediaQueries( medium ) {
+		padding: 0;
+	}
+
+	@include mediaQueries( small ) {
+		padding: 0;
+	}
+
+	// Main title
+	h1 {
+
+		font-weight: 700;
+		letter-spacing: -0.03em;
+		margin-bottom: $marginBottom--xs;
+
+		@include mediaQueries( medium ) {
+			margin-bottom: rem( 5px )
+		}
+
+		@include mediaQueries( small ) {
+			margin-bottom: rem( 5px )
+		}
+
+	}
+
+	// Subtitles
+	h2 {
+
+		font-weight: 700;
+		letter-spacing: -0.03em;
+
+		@include mediaQueries( medium ) {
+			font-size: $fontSize--l--bpm;
+			margin-bottom: $marginBottom--xxs--bpm;
+		}
+
+		@include mediaQueries( small ) {
+			font-size: $fontSize--l--bps;
+			margin-bottom: $marginBottom--xxs--bps;
+		}
+
+	}
+
+}

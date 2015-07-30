@@ -1,0 +1,32 @@
+{
+  "name": "BraceWP",
+  "version": "1.0.0",
+  "description": "BraceWP starter theme for better, easier and modern WordPress theme development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Juras",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-connect": "*",
+    "gulp-html-minifier": "*",
+    "gulp-jade": "*",
+    "gulp-jshint": "*",
+    "gulp-livereload": "*",
+    "gulp-minify-css": "*",
+    "gulp-pretty-url": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*",
+    "gulp-uglifyjs": "*",
+    "gulp-util": "*",
+    "gulp-watch": "*",
+    "jshint-stylish": "*",
+    "require-dir": "^0.3.0",
+    "vinyl-ftp": "*"
+  }
+}

@@ -1,0 +1,139 @@
+
+// ---------- Button ---------- //
+
+// Base
+.Button {
+	
+	border: 0;
+	border-radius: rem( 7px );
+	display: inline-block;
+	transition-duration: 0.5s;
+
+	a {
+
+		display: block;
+		text-decoration: none;
+		color: palette( white );
+		font-weight: 400;
+		font-family: $fontFamily--b;
+
+		&:hover {
+			color: palette( white );
+			text-decoration: none;
+		}
+
+	}
+
+	@include mediaQueries( medium ) {
+		display: block;
+		text-align: center;
+		max-width: 45vw;
+		margin: 0 auto;
+	}
+
+	@include mediaQueries( small ) {
+		display: block;
+		text-align: center;
+		width: 70vw;
+		margin: 0 auto;
+	}
+
+}
+
+// ---------- Button size ---------- //
+
+// Extra large
+.Button--XL {
+
+	font-size: $fontSize--l;
+
+	a {
+		padding: rem( 15px ) rem( 30px ) rem( 15px ) rem( 30px );
+	}
+
+	@include mediaQueries( medium ) {
+		font-size: $fontSize--base--bpm;
+	}
+
+	@include mediaQueries( small ) {
+		font-size: $fontSize--base--bps;
+	}
+
+}
+
+// Medium
+.Button--M {
+
+	font-size: $fontSize--base;
+
+	a {
+		padding: rem( 10px ) rem( 25px ) rem( 10px ) rem( 25px );
+	}
+
+	@include mediaQueries( medium ) {
+		font-size: $fontSize--base--bpm;
+	}
+
+	@include mediaQueries( small ) {
+		font-size: $fontSize--base--bps;
+	}
+
+}
+
+// ---------- Button colors ---------- //
+
+// Red
+.Button--red {
+
+	border-bottom: 4px solid palette( red, dark );
+	background-color: palette( red );
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: palette( red, dark );
+	}
+
+}
+
+// Blue
+.Button--blue {
+
+	border-bottom: 4px solid palette( blue, dark );
+	background-color: palette( blue );
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: palette( blue, dark );
+	}
+
+}
+
+// Green
+.Button--green {
+
+	border-bottom: 4px solid palette( green, dark );
+	background-color: palette( green );
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: palette( green, dark );
+	}
+
+}
+
+// Orange
+.Button--orange {
+
+	border-bottom: 4px solid palette( orange, dark );
+	background-color: palette( orange );
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: palette( orange, dark );
+	}
+
+}

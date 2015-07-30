@@ -1,0 +1,39 @@
+
+// ---------- To top button ---------- //
+
+.ToTopButton {
+
+	background: inherit;
+	border: 1px solid palette( grey );
+	display: none;
+	position: fixed;
+	bottom: rem( 40px );
+	right: rem( 40px );
+
+	&:hover {
+		background: palette( grey, dark );
+	}
+
+	.fa-chevron-up {
+
+		font-size: $fontSize--s;
+		padding: rem( 10px ) rem( 15px );
+		color: palette( grey, base );
+
+		&:hover {
+			color: palette( white );
+		}
+
+	}
+
+	@include mediaQueries( medium ) {
+		bottom: rem( 20px );
+		right: rem( 20px );
+	}
+
+	@include mediaQueries( small ) {
+		bottom: rem( 20px );
+		right: rem( 20px );
+	}
+
+}

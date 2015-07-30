@@ -1,0 +1,78 @@
+{% include 'core-top.twig' %}
+
+{# ---------- Home header hero container ---------- #}
+
+<section class="Container Container--homeHero">
+	
+	{# Header #}
+	<div class="Row--a">
+		<div class="Column--3">
+			{% include 'snippet-LogoBlock.twig' %}
+		</div>	
+		<div class="Column--9">
+			{% include 'snippet-NavMenu.twig' %}
+		</div>
+	</div>
+
+	{# Home CTA #}
+	<div class="Row--a">
+		<div class="Container Container-XL">
+			<div class="Column--12">
+				<div class="HeroBlock HeroBlock--home" data-sr="fade-in, over 1s">
+					<h1 class="HeroBlock-heroHeadline">Apartments and Villas for Rent in Croatia</h1>
+					<h2 class="HeroBlock-heroTagline">Traveling to Croatia? What you need is a comfortable apartment or a villa that will make you feel like you have brought your home with you. Privacy and comfort - guaranteed.</h2>
+					<button class="Button Button--XL Button--red">
+						<a href="#features">See Accommodations <i class="fa fa-caret-down"></i></a>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+{# ---------- Home features ---------- #}
+
+<section id="features" class="Container ContainerL">
+	
+	<div class="Row--a">
+		
+		<div
+		class="Column--4 u-centerText"
+		style="border: 1px solid #333"
+		data-sr="enter left, roll 360deg over 1s">
+			<h2>{{ post.get_field( 'feature_1_title' ) }}</h2>
+			<p>{{ post.get_field( 'feature_1_text' ) }}</p>
+			<div class="Button Button--M Button--blue">
+				<a href="">Click here</a>
+			</div>
+		</div>
+
+		<div
+		class="Column--4 u-centerText"
+		style="border: 1px solid #333"
+		data-sr="enter left, roll 360deg over 1s">
+			<h2>{{ post.get_field( 'feature_2_title' ) }}</h2>
+			<p>{{ post.get_field( 'feature_2_text' ) }}</p>
+			<div class="Button Button--M Button--green">
+				<a href="">Click here</a>
+			</div>
+		</div>
+
+		<div
+		class="Column--4 u-centerText"
+		style="border: 1px solid #333"
+		data-sr="enter left, roll 360deg over 1s">
+			<h2>{{ post.get_field( 'feature_3_title' ) }}</h2>
+			<p>{{ post.get_field( 'feature_3_text' ) }}</p>
+			<div class="Button Button--M Button--orange">
+				<a href="">Click here</a>
+			</div>
+		</div>
+
+	</div>
+
+</section>
+
+{% include 'section-footer.twig' %}
+{% include 'core-bot.twig' %}

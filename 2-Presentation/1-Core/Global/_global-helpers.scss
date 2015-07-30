@@ -1,0 +1,35 @@
+
+// ---------- Functions ---------- //
+
+// Convert to rem
+@function rem( $target, $context: 16px ) {
+	@return ( $target / $context ) * 1rem;
+}
+
+// Get color from a palette
+@function palette( $palette, $shade: base ) {
+	@return map-get(
+		map-get( $palettes, $palette ),
+		$shade
+	);
+}
+
+
+// ---------- Mixins ---------- //
+
+// Media queries
+@mixin mediaQueries( $break ) {
+
+	@if ($break == 'small') {
+		@media ( max-width: $breakpoint--s ) {
+			@content;
+		}
+	}
+
+	@else if ( $break == 'medium' ) {
+		@media ( max-width: $breakpoint--m ) {
+			@content;
+		}
+	}
+
+}

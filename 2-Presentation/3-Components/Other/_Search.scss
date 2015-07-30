@@ -1,0 +1,50 @@
+// ---------- Title styles ---------- //
+
+.gs-title {
+
+	b {
+		font-size: rem( 18px ) !important;
+	}
+
+}
+
+// ---------- Description styles ---------- //
+
+.gs-snippet {
+
+	font-family: $fontFamily--a !important;
+	font-size: rem( 18px ) !important;
+
+}
+
+.gsc-table-result,
+.gsc-thumbnail-inside,
+.gsc-url-top {
+
+	padding: 0 !important;
+
+}
+
+.gsc-selected-option-container {
+
+	padding-right: rem( 30px ) !important;
+
+}
+
+// ---------- No results style ---------- //
+
+.gs-no-results-result .gs-snippet,
+.gs-error-result .gs-snippet {
+
+	background: palette( white ) !important;
+	border-width: 0 !important;
+
+}
+
+// ---------- Wrapper above results ---------- //
+
+.gsc-above-wrapper-area {
+
+	border-bottom: 0 !important;
+	
+}

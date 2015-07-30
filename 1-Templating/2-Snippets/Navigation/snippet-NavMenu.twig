@@ -1,0 +1,7 @@
+<ul class="NavMenu">
+{% for menu in header_menu.get_items %}
+  <li class="NavMenu-item">
+    <a class="NavMenu-link" href="{{ menu.get_link }}">{{ menu.title }}</a>
+  </li>
+{% endfor %}
+</ul>

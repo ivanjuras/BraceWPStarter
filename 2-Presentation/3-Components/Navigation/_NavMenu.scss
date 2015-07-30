@@ -1,0 +1,82 @@
+
+// ---------- NavMenu ---------- //
+
+// General
+.NavMenu {
+
+	display: block;
+	float: right;
+	list-style: none;
+	overflow: hidden;
+
+	@include mediaQueries( medium ) {
+		display: none;
+		float: none;
+	}
+
+	@include mediaQueries( small ) {
+		display: none;
+		float: none;
+	}
+
+}
+
+// Item
+.NavMenu-item {
+
+	display: inline-block;
+	font-size: $fontSize--base;
+	font-family: $fontFamily--a;
+	font-weight: 400;
+	height: 100%;
+	text-align: center;
+
+	&:last-of-type {
+		padding-right: 0;
+	}
+
+	@include mediaQueries( medium ) {
+		border-bottom: 1px solid palette( grey, x-light );
+		display: block;
+		text-align: center;
+		&:first-child {
+			border-top: 1px solid palette( grey, x-light );
+		}
+		&:last-of-type {
+			border-bottom: 0;
+			padding-right: 0;
+		}
+	}
+
+	@include mediaQueries( small ) {
+		border-bottom: 1px solid palette( grey, x-light );
+		display: block;
+		text-align: center;
+		padding: rem( 12px ) 0;
+	}
+
+}
+
+// Link
+.NavMenu-link {
+
+	color: palette( black );
+	display: inline-block;
+	padding: rem( 25px ) rem( 30px );
+	transition: color 0.1s ease-in;
+	text-decoration: none;
+
+	&:hover {
+		color: palette( red, light );
+		text-decoration: none;
+	}
+
+	@include mediaQueries( medium ) {
+		padding: rem( 20px ) 0 rem( 20px ) 0;
+	}
+
+	@include mediaQueries( small ) {
+		padding: rem( 12px ) 0;
+	}
+
+}

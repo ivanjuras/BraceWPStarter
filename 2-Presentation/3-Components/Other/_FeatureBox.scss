@@ -1,0 +1,35 @@
+
+// ---------- FeatureBox ---------- //
+
+// Base
+.FeatureBox {
+
+	text-align: center;
+
+	@include mediaQueries( medium ) {
+		padding-bottom: $paddingBottom--xl--bpm;
+	}
+
+	@include mediaQueries( small ) {
+		padding-bottom: $paddingBottom--xl--bps;
+	}
+
+}
+
+// Title
+.FeatureBox-title {
+
+	font-weight: 400;
+	letter-spacing: -0.03em;
+
+	@include mediaQueries( medium ) {
+		font-size: $fontSize--l--bpm;
+		margin-bottom: $marginBottom--xxs--bpm;
+	}
+
+	@include mediaQueries( small ) {
+		font-size: $fontSize--l--bps;
+		margin-bottom: $marginBottom--xxs--bps;
+	}
+
+}

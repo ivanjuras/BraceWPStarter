@@ -1,0 +1,42 @@
+
+// ---------- Hamburger button ---------- //
+
+.HamburgerButton {
+
+	border: 1px solid palette( grey, x-light );
+	cursor: pointer;
+	display: none;
+	float: right;
+	margin-top: rem( 15px );
+	margin-bottom: rem( 10px );
+	padding: rem( 5px );
+	transition-duration: 0.5s;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background: palette( grey, light );
+	}
+
+	.fa-bars {
+
+		padding-left: rem( 10px );
+		font-size: $fontSize--base;
+		color: palette( grey, dark );
+
+		@include mediaQueries( small ) {
+			padding-left: rem( 5px );
+		}
+
+	}
+	
+	@include mediaQueries( medium ) {
+		display: inline-block;
+	}
+
+	@include mediaQueries( small ) {
+		display: inline-block;
+		margin-top: rem( 10px );
+	}
+
+}

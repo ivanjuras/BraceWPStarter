@@ -1,0 +1,83 @@
+// ---------- TabMenu ---------- //
+
+// Base
+.TabMenu {
+
+	display: inline-block;
+	width: 100%;
+
+}
+
+// Tab item
+.TabMenu-tabItem {
+
+	background: palette( white );
+	float: left;
+	list-style: none;
+	margin: 0 rem( 10px );
+
+	&.is-active {
+		background: palette( gray, x-light );
+	}
+
+	&:first-of-type {
+		margin-left: 0;
+	}
+
+	@include mediaQueries( small ) {
+		display: block;
+		margin: 0;
+		width: 50%;
+	}
+
+}
+
+// Tab link
+.TabMenu-tabLink {
+
+	color: palette( gray, x-dark );
+	display: inline-block;
+	padding: rem( 10px ) rem( 10px );
+	text-decoration: none;
+	transition: all linear 0.15s;
+
+	&:hover {
+		color: palette( black, base );
+		text-decoration: none;
+	}
+
+	@include mediaQueries( small ) {
+		padding-right: 50%;
+	}
+
+}
+
+// Tab list
+.TabMenu-tabList {
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both; 
+	}
+	
+}
+
+// Tab content list
+.TabMenu-tabContentList {
+
+	background: palette( gray, x-light );
+
+}
+
+// Tab content
+.TabMenu-tabContent {
+
+	display: none;
+	padding: rem( 15px );
+
+	&.is-active {
+		display: block;
+	}
+
+}

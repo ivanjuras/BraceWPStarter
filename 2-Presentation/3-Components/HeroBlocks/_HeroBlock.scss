@@ -1,0 +1,65 @@
+
+// ---------- Hero block ---------- //
+
+// Base
+.HeroBlock {
+
+	height: 100%;
+	text-align: center;
+	padding: rem( 150px ) 0 rem( 150px ) 0;
+
+	@include mediaQueries( medium ) {
+		padding-bottom: rem( 50px );
+		padding-top: rem( 50px );
+	}
+
+	@include mediaQueries( small ) {
+		padding-bottom: rem( 25px );
+		padding-top: rem( 25px );
+	}
+	
+}
+
+// Headline
+.HeroBlock-heroHeadline {
+
+	color: palette( black, light );
+	font-size: $fontSize--xxl;
+	font-weight: 300;
+	line-height: $lineHeight--a;
+	letter-spacing: - 0.07rem;
+	margin-bottom: $marginBottom--s;
+
+	@include mediaQueries( medium ) {
+		font-size: $fontSize--xxl--bpm;
+		margin-bottom: $marginBottom--s--bpm;
+	}
+
+	@include mediaQueries( small ) {
+		font-size: $fontSize--xxl--bps;
+		margin-bottom: $marginBottom--s--bps;
+	}
+
+}
+
+// Tagline
+.HeroBlock-heroTagline {
+
+	color: palette( black, light );
+	font-family: $fontFamily--a;
+	font-size: $fontSize--l;
+	font-weight: 300;
+	line-height: $lineHeight--b;
+	margin-bottom: $marginBottom--s;
+
+	@include mediaQueries( medium ) {
+		font-size: $fontSize--l--bpm;
+		margin-bottom: $marginBottom--s--bpm;
+	}
+
+	@include mediaQueries( small ) {
+		font-size: $fontSize--l--bps;
+		margin-bottom: $marginBottom--s--bps;
+	}
+
+}

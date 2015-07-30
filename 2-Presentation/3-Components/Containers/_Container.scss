@@ -1,0 +1,119 @@
+
+// ---------- Container ---------- //
+
+// Base
+.Container {
+
+	display: block;
+	padding-left: $paddingLeft--s;
+	padding-right: $paddingRight--s;
+	position: relative;
+
+	@include mediaQueries( medium ) {
+		padding-left: $paddingLeft--s--bpm;
+		padding-right: $paddingLeft--s--bpm;
+	}
+
+	@include mediaQueries( small ) {
+		padding-left: $paddingLeft--s--bps;
+		padding-right: $paddingLeft--s--bps;
+	}
+	
+}
+
+// Home hero container
+.Container--homeHero {
+
+	@include clearfix;
+	background:
+		linear-gradient(
+			rgba( palette( gray, xx-light ), 0.67 ),
+			rgba( palette( gray, xx-light ), 0.67 )
+		),
+		url('http://localhost:3000/BraceWP/wp-content/uploads/2015/07/Gala-Hero-Test-2.jpg') no-repeat center center;
+	background-size: cover;
+	padding-top: rem( 10px );
+	height: 100vh;
+
+	@include mediaQueries( medium ) {
+		height: auto;
+	}
+
+	@include mediaQueries( small ) {
+		height: auto;
+	}
+
+}
+
+// Header
+.Container--header {
+
+	background: palette( white, base );
+	border-bottom: 1px solid palette( gray, x-light );
+
+}
+
+// Extra large
+.ContainerXL {
+
+	padding: $paddingTop--xl $paddingRight--s $paddingBottom--xl $paddingLeft--s;
+
+	@include mediaQueries( medium ) {
+		padding: $paddingTop--xl--bpm $paddingRight--s--bpm $paddingBottom--xl--bpm $paddingLeft--s--bpm;
+	}
+
+	@include mediaQueries( small ) {
+		padding: $paddingTop--xl--bps $paddingRight--s--bps $paddingBottom--xl--bps $paddingLeft--s--bps;
+	}
+	
+}
+
+.ContainerXL--standard {
+
+	background: inherit;
+
+}
+
+.ContainerXL--borderB {
+
+	background: inherit;
+	border-bottom: 1px solid palette( gray, x-light );
+
+}
+
+// Large
+.ContainerL {
+	
+	padding: $paddingTop--l $paddingRight--s $paddingBottom--l $paddingLeft--s;
+	
+	@include mediaQueries( medium ) {
+		padding: $paddingTop--l--bpm $paddingRight--s--bpm $paddingBottom--l--bpm $paddingLeft--s--bpm;
+	}
+
+	@include mediaQueries( small ) {
+		padding: $paddingTop--l--bps $paddingRight--s--bps $paddingBottom--l--bps $paddingLeft--s--bps;
+	}
+
+}
+
+.ContainerL--borderB {
+
+	background: inherit;
+	border-bottom: 1px solid palette( gray, x-light );
+
+}
+
+.ContainerL--borderTRBL {
+
+	background: inherit;
+	border: 1px solid palette( gray, light );
+
+}
+
+// Footer
+.Container--footer {
+
+	background: palette( gray, xx-light );
+	border-top: 1px solid palette( gray, x-light );
+	
+}

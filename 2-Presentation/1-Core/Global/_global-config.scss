@@ -1,0 +1,303 @@
+
+// ---------- Colors ---------- //
+
+// Base colors
+$black    : #000;
+$blue     : #5D9594;
+$green    : #90a34d;
+$gray     : #999;
+$lavender : #c7a0cb;
+$orange   : #ee7600;
+$red      : #A52A2A;
+$white    : #fff;
+$yellow   : #f3c859;
+
+// Palettes
+$palettes: ( 
+
+	black: ( 
+		base     : $black,
+		light    : lighten( $black, 30% ),
+		x-light  : lighten( $black, 35% )
+	),
+
+	blue: (
+		x-dark   : darken( $blue, 20% ),
+		dark     : darken( $blue, 10% ),
+		base     : $blue,
+		light    : lighten( $blue, 15% )
+	),
+
+	green: (
+		x-dark   : darken( $green, 25% ),
+		dark     : darken( $green, 15% ),
+		base     : $green,
+		light    : lighten( $green, 15% ),
+		x-light  : lighten( $green, 30% )
+	),
+
+	gray: ( 
+		x-dark   : darken( $gray, 20% ),
+		dark     : darken( $gray, 10% ),
+		base     : $gray,
+		light    : lighten( $gray, 10% ),
+		x-light  : lighten( $gray, 30% ),
+		xx-light : lighten( $gray, 38% )
+	),
+
+	lavender: ( 
+		x-dark   : darken( $lavender, 20% ),
+		dark     : darken( $lavender, 10% ),
+		base     : $lavender,
+		light    : lighten( $lavender, 10% ),
+	),
+
+	orange: ( 
+		dark     : darken( $orange, 10% ),
+		base     : $orange,
+		light    : lighten( $orange, 15% )
+	),
+
+	red: ( 
+		dark     : darken( $red, 10% ),
+		base     : $red,
+		light    : lighten( $red, 15% )
+	),
+
+	white: ( 
+		base     : $white 
+	),
+
+	yellow: ( 
+		dark     : darken( $yellow, 10% ),
+		base     : $yellow,
+		light    : lighten( $yellow, 15% )
+	)
+
+ );
+
+
+// ---------- Typography ---------- //
+
+$fontFamily--a     : 'Open Sans', sans-serif;
+$fontFamily--b     : 'Open Sans Condensed', serif;
+
+$lineHeight--a     : 1.6;
+$lineHeight--b     : 1.4;
+$lineHeight--c     : 1.1;
+$lineHeight--d     : 1.2;
+
+
+// ---------- Breakpoints ---------- //
+
+$breakpoint--s     : rem( 600px );
+$breakpoint--m     : rem( 1200px );
+
+
+// ---------- Font sizes ---------- //
+
+// Base
+$fontSize--base          : rem( 18px );
+$fontSize--base--bpm     : rem( 16px );
+$fontSize--base--bps     : rem( 16px );
+
+// Extra extra large
+$fontSize--xxl           : 3.5vw;
+$fontSize--xxl--bpm      : 4.5vw;
+$fontSize--xxl--bps      : 6.3vw;
+
+// Extra large
+$fontSize--xl            : 1.8vw;
+$fontSize--xl--bpm       : 3vw;
+$fontSize--xl--bps       : 5.7vw;
+
+// Large
+$fontSize--l             : 1.4vw;
+$fontSize--l--bpm        : 3vw;
+$fontSize--l--bps        : 3vw;
+
+// Small
+$fontSize--s             : rem( 16px );
+$fontSize--s--bpm        : rem( 16px );
+$fontSize--s--bps        : rem( 16px );
+
+// Extra small
+$fontSize--xs            : rem( 14px );
+$fontSize--xs--bpm       : rem( 12px );
+$fontSize--xs--bps       : rem( 10px );
+
+
+// ---------- Paddings ---------- //
+
+// Extra large
+$paddingTop--xl          : rem( 80px );
+$paddingTop--xl--bpm     : rem( 60px );
+$paddingTop--xl--bps     : rem( 40px );
+
+$paddingRight--xl        : rem( 80px );
+$paddingRight--xl--bpm   : rem( 60px );
+$paddingRight--xl--bps   : rem( 40px );
+
+$paddingBottom--xl       : rem( 80px );
+$paddingBottom--xl--bpm  : rem( 60px );
+$paddingBottom--xl--bps  : rem( 40px );
+
+$paddingLeft--xl         : rem( 80px );
+$paddingLeft--xl--bpm    : rem( 60px );
+$paddingLeft--xl--bps    : rem( 40px );
+
+// Large
+$paddingTop--l           : rem( 60px );
+$paddingTop--l--bpm      : rem( 40px );
+$paddingTop--l--bps      : rem( 20px );
+
+$paddingRight--l         : rem( 60px );
+$paddingRight--l--bpm    : rem( 60px );
+$paddingRight--l--bps    : rem( 60px );
+
+$paddingBottom--l        : rem( 60px );
+$paddingBottom--l--bpm   : rem( 40px );
+$paddingBottom--l--bps   : rem( 20px );
+
+$paddingLeft--l          : rem( 60px );
+$paddingLeft--l--bpm     : rem( 60px );
+$paddingLeft--l--bps     : rem( 60px );
+
+// Medium
+$paddingTop--m           : rem( 40px );
+$paddingTop--m--bpm      : rem( 30px );
+$paddingTop--m--bps      : rem( 30px ); 
+
+$paddingRight--m         : rem( 40px );
+$paddingRight--m--bpm    : rem( 40px );
+$paddingRight--m--bps    : rem( 40px );
+
+$paddingBottom--m        : rem( 40px );
+$paddingBottom--m--bpm   : rem( 30px );
+$paddingBottom--m--bps   : rem( 30px );
+
+$paddingLeft--m          : rem( 40px );
+$paddingLeft--m--bpm     : rem( 40px );
+$paddingLeft--m--bps     : rem( 40px );
+
+// Small
+$paddingTop--s           : rem( 28px );
+$paddingTop--s--bpm      : rem( 28px );
+$paddingTop--s--bps      : rem( 28px );
+
+$paddingRight--s         : rem( 25px );
+$paddingRight--s--bpm    : rem( 25px );
+$paddingRight--s--bps    : rem( 25px );
+
+$paddingBottom--s        : rem( 28px );
+$paddingBottom--s--bpm   : rem( 28px );
+$paddingBottom--s--bps   : rem( 28px );
+
+$paddingLeft--s          : rem( 25px );
+$paddingLeft--s--bpm     : rem( 25px );
+$paddingLeft--s--bps     : rem( 25px );
+
+// Extra small
+$paddingTop--xs          : rem( 15px );
+$paddingTop--xs--bpm     : rem( 15px );
+$paddingTop--xs--bps     : rem( 15px );
+
+$paddingRight--xs        : rem( 15px );
+$paddingRight--xs--bpm   : rem( 15px );
+$paddingRight--xs--bps   : rem( 15px );
+
+$paddingBottom--xs       : rem( 15px );
+$paddingBottom--xs--bpm  : rem( 15px );
+$paddingBottom--xs--bps  : rem( 15px );
+
+$paddingLeft--xs         : rem( 15px );
+$paddingLeft--xs--bpm    : rem( 15px );
+$paddingLeft--xs--bps    : rem( 15px );
+
+
+// ---------- Margins ---------- //
+
+// Large
+$marginTop--l            : rem( 80px );
+$marginTop--l--bpm       : rem( 40px );
+$marginTop--l--bps       : rem( 20px );
+
+$marginRight--l          : rem( 80px );
+$marginRight--l--bpm     : rem( 40px );
+$marginRight--l--bps     : rem( 20px );
+
+$marginBottom--l         : rem( 80px ); 
+$marginBottom--l--bpm    : rem( 40px );
+$marginBottom--l--bps    : rem( 20px );
+
+$marginLeft--l           : rem( 80px );
+$marginLeft--l--bpm      : rem( 40px );
+$marginLeft--l--bps      : rem( 20px );
+
+// Medium
+$marginTop--m            : rem( 48px );
+$marginTop--m--bpm       : rem( 40px );
+$marginTop--m--bps       : rem( 40px );
+
+$marginRight--m          : rem( 35px );
+$marginRight--m--bpm     : rem( 35px );
+$marginRight--m--bps     : rem( 35px );
+
+$marginBottom--m         : rem( 40px );
+$marginBottom--m--bpm    : rem( 35px );
+$marginBottom--m--bps    : rem( 30px );
+
+$marginLeft--m           : rem( 35px );
+$marginLeft--m--bpm      : rem( 35px );
+$marginLeft--m--bps      : rem( 35px );
+
+// Small
+$marginTop--s            : rem( 30px );
+$marginTop--s--bpm       : rem( 30px );
+$marginTop--s--bps       : rem( 30px );
+
+$marginRight--s          : rem( 30px );
+$marginRight--s--bpm     : rem( 30px );
+$marginRight--s--bps     : rem( 30px );
+
+$marginBottom--s         : rem( 35px );
+$marginBottom--s--bpm    : rem( 30px );
+$marginBottom--s--bps    : rem( 25px );
+
+$marginLeft--s           : rem( 30px );
+$marginLeft--s--bpm      : rem( 30px );
+$marginLeft--s--bps      : rem( 30px );
+
+// Extra small
+$marginTop--xs           : rem( 20px );
+$marginTop--xs--bpm      : rem( 20px );
+$marginTop--xs--bps      : rem( 20px );
+
+$marginRight--xs         : rem( 20px );
+$marginRight--xs--bpm    : rem( 20px );
+$marginRight--xs--bps    : rem( 20px );
+
+$marginBottom--xs        : rem( 20px );
+$marginBottom--xs--bpm   : rem( 20px );
+$marginBottom--xs--bps   : rem( 20px );
+
+$marginLeft--xs          : rem( 20px );
+$marginLeft--xs--bpm     : rem( 20px );
+$marginLeft--xs--bps     : rem( 20px );
+
+// Extra extra small
+$marginTop--xxs          : rem( 14px );
+$marginTop--xxs--bpm     : rem( 14px );
+$marginTop--xxs--bps     : rem( 14px );
+
+$marginRight--xxs        : rem( 14px );
+$marginRight--xxs--bpm   : rem( 14px );
+$marginRight--xxs--bps   : rem( 14px );
+
+$marginBottom--xxs       : rem( 14px );
+$marginBottom--xxs--bpm  : rem( 14px );
+$marginBottom--xxs--bps  : rem( 14px );
+
+$marginLeft--xxs         : rem( 14px );
+$marginLeft--xxs--bpm    : rem( 14px );
+$marginLeft--xxs--bps    : rem( 14px );

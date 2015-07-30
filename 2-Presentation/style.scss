@@ -1,0 +1,15 @@
+/*!
+THEME NAME: BraceWP Starter Theme
+VERSION: 1.0
+THEME URI: http://www.ivanjuras.com
+DESCRIPTION: Starter theme for the BraceWP theme framework.
+AUTHOR: Ivan Juras
+*/
+
+// ---------- Import local hubs ---------- //
+
+@import '1-Core/core-hub';
+@import '2-Structures/structures-hub';
+@import '3-Components/components-hub';
+
+// ---------- Additional styles ( for quick tests ) ---------- //

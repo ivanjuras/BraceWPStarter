@@ -1,0 +1,39 @@
+
+// ---------- Logo block ---------- //
+
+// Base
+.LogoBlock {
+
+	display: inline-block;
+	line-height: 1;
+	text-align: left;
+	padding: rem( 9px ) $paddingRight--s rem( 9px ) 0;
+
+	a {
+		text-decoration: none;
+	}
+
+	@include mediaQueries( medium ) {
+		text-align: center;
+		// margin-left: $paddingLeft--s;
+	}
+
+	@include mediaQueries( small ) {
+		text-align: center;
+		// padding-left: $paddingLeft--s;
+	}
+
+}
+
+// Image
+.LogoBlock-image {
+
+	@include mediaQueries( medium ) {
+		max-width: rem( 100px );
+	}
+
+	@include mediaQueries( small ) {
+		max-width: rem( 70px );
+	}
+
+}

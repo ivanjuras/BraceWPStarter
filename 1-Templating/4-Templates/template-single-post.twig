@@ -1,0 +1,15 @@
+{% include 'core-top.twig' %}
+{% include 'section-header.twig' %}
+
+{# ---------- Post ---------- #}
+<div class="Row--c">
+	<div class="Column--12">
+		<div class="Post">
+			<h1>{{ post.title }}</h1>
+			{{ post.content }}
+		</div>
+	</div>
+</div>
+
+{% include 'section-footer.twig' %}
+{% include 'core-bot.twig' %}

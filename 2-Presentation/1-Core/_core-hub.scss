@@ -1,0 +1,14 @@
+
+// ---------- Core styles ---------- //
+
+// Global
+@import 'Global/global-helpers';
+@import 'Global/global-config';
+@import 'Global/global-normalize';
+@import 'Global/global-wp';
+@import 'Global/global-base';
+
+// Plugins
+@import 'Plugins/animate/animate';
+@import 'Plugins/bourbon/bourbon';
+@import 'Plugins/font-awesome/font-awesome';

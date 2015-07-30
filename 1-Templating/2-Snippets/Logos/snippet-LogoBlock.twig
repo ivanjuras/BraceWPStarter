@@ -1,0 +1,17 @@
+<div class="LogoBlock">
+	<a href="{{ site.url }}">
+		<img
+		srcset="
+			{{ logo_image_large.get_url }} {{ logo_image_large.width ~ 'w' }},
+			{{ logo_image_medium.get_url }} {{ logo_image_medium.width ~ 'w' }},
+			{{ logo_image_small.get_url }} {{ logo_image_small.width ~ 'w' }}"
+		sizes="
+			(min-width: 1200px) {{ logo_image_large.width ~ 'px' }},
+			(min-width: 600px) {{ logo_image_medium.width ~ 'px' }},
+			(min-width: 0px) {{ logo_image_small.width ~ 'px' }}"
+		alt="Gala Holiday Logo"/>
+	</a>
+</div>
+<div class="HamburgerButton">
+	Menu <i class="fa fa-bars"></i>
+</div>

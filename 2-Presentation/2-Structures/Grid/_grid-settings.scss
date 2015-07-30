@@ -1,0 +1,17 @@
+@import "neat/neat-helpers";
+
+// Grid widths
+$column: rem( 60px );
+$gutter: rem( 50px );
+$grid-columns: 12;
+$max-width: rem( 1200px );
+
+// Visual grid
+$visual-grid: false;
+$visual-grid-color: palette( gray, light );
+$visual-grid-opacity: 0.4;
+$visual-grid-index: front;
+
+// Breakpoints
+$gridBreakpoint--m: new-breakpoint( max-width $breakpoint--m 8 );
+$gridBreakpoint--s: new-breakpoint( max-width $breakpoint--s 4 );

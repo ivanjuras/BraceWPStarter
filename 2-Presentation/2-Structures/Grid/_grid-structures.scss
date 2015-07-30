@@ -1,0 +1,105 @@
+// ---------- Rows ---------- //
+
+.Row--a {
+	@include outer-container;
+}
+
+.Row--b {
+	@include outer-container( 100% );
+}
+
+.Row--c {
+	@include outer-container( rem( 760px ) );
+}
+
+// ---------- Columns ---------- //
+
+// 12 columns
+.Column--12 {
+
+	@include span-columns( 12 );
+
+	@include media( $gridBreakpoint--m ) {
+		@include span-columns( 8 );
+	}
+
+	@include media( $gridBreakpoint--s ) {
+		@include span-columns( 4 );
+	}
+
+}
+
+// 9 columns
+.Column--9 {
+
+	@include span-columns( 9 );
+
+	@include media( $gridBreakpoint--m ) {
+		@include span-columns( 8 );
+	}
+
+	@include media( $gridBreakpoint--s ) {
+		@include span-columns( 4 );
+	}
+
+}
+
+// 8 columns
+.Column--8 {
+
+	@include span-columns( 8 );
+
+	@include media( $gridBreakpoint--m ) {
+		@include span-columns( 8 );
+	}
+
+	@include media( $gridBreakpoint--s ) {
+		@include span-columns( 4 );
+	}
+
+}
+
+// 6 columns
+.Column--6 {
+
+	@include span-columns( 6 );
+
+	@include media( $gridBreakpoint--m ) {
+		@include span-columns( 8 );
+	}
+
+	@include media( $gridBreakpoint--s ) {
+		@include span-columns( 4 );
+	}
+
+}
+
+// 4 columns
+.Column--4 {
+
+	@include span-columns( 4 );
+
+	@include media( $gridBreakpoint--m ) {
+		@include span-columns( 8 );
+	}
+
+	@include media( $gridBreakpoint--s ) {
+		@include span-columns( 4 );
+	}
+
+}
+
+// 3 columns
+.Column--3 {
+
+	@include span-columns( 3 );
+
+	@include media( $gridBreakpoint--m ) {
+		@include span-columns( 8 );
+	}
+
+	@include media( $gridBreakpoint--s ) {
+		@include span-columns( 4 );
+	}
+
+}
